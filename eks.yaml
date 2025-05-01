@@ -7,8 +7,10 @@ metadata:
 
 managedNodeGroups:
   - name: ng-1
-    instanceType: m5.large
+    instanceType: m5.large    # spot instance , on demand instance
     desiredCapacity: 3
     spot: true
 
 # eksctl create cluster --config-file=eks.yaml
+
+# kubectl get nodes
