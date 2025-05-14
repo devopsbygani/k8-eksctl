@@ -1,8 +1,6 @@
 1.installing kubectl - > k8 client
 2.installing eksctl  -> command to create , update and delete , managing cluster.
 
-#curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.4/2025-01-10/bin/darwin/amd64/kubectl
-
 a.install kubectl
 ----------------
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.0/2024-09-12/bin/linux/amd64/kubectl
