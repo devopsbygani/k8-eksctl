@@ -7,7 +7,7 @@ metadata:
 
 managedNodeGroups:
   - name: ng-1
-    instanceType: m5.medium    # spot instance , on demand instance
+    instanceType: m5.large    # spot instance , on demand instance
     desiredCapacity: 3
     spot: true
 
