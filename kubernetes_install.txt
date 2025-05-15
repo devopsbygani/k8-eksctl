@@ -35,3 +35,9 @@ sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
 sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
+
+e. install k9s 
+--------------
+curl -sS https://webinstall.dev/k9s | bash
+reference: https://github.com/derailed/k9s
+
