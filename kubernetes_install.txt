@@ -35,7 +35,6 @@ sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
 sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
-
 e. install k9s 
 --------------
 curl -sS https://webinstall.dev/k9s | bash
@@ -44,3 +43,12 @@ reference: https://github.com/derailed/k9s
 f. install metric server
 ------------------------
 reference: https://github.com/kubernetes-sigs/metrics-server
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+d. installing apcahe bench https tool (used to apply  load on server)
+-------------------------------
+reference: https://linuxconfig.org/how-to-install-apache-bench-on-redhat-8
+# dnf install httpd-tools
+# ab  -n 100000 -c 10 http://localhost/index.html (-n: no of request , -c councurrent request means at a single point of time how many request)
+# ab -n 50000 -c 5000 http:// <url>:80/
+
