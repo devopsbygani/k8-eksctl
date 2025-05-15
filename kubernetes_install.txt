@@ -41,3 +41,6 @@ e. install k9s
 curl -sS https://webinstall.dev/k9s | bash
 reference: https://github.com/derailed/k9s
 
+f. install metric server
+------------------------
+reference: https://github.com/kubernetes-sigs/metrics-server
