@@ -45,10 +45,15 @@ f. install metric server
 reference: https://github.com/kubernetes-sigs/metrics-server
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
-d. installing apcahe bench https tool (used to apply  load on server)
+g. installing apcahe bench https tool (used to apply  load on server)
 -------------------------------
 reference: https://linuxconfig.org/how-to-install-apache-bench-on-redhat-8
 # dnf install httpd-tools
 # ab  -n 100000 -c 10 http://localhost/index.html (-n: no of request , -c councurrent request means at a single point of time how many request)
 # ab -n 50000 -c 5000 http:// <url>:80/
 
+h. installing helm
+------------------------
+$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+$ chmod 700 get_helm.sh
+$ ./get_helm.sh
