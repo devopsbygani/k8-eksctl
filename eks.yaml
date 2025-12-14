@@ -1,10 +1,8 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
- 
 metadata:
   name: expense
   region: us-east-1
-
 managedNodeGroups:
   - name: ng-1
     instanceType: m5.large    # spot instance , on demand instance
@@ -12,5 +10,4 @@ managedNodeGroups:
     spot: true
 
 # eksctl create cluster --config-file=eks.yaml
-
 # kubectl get nodes
